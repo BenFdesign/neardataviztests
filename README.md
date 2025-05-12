@@ -1,11 +1,8 @@
 # neardataviztests
-Tests and architecture for the NEAR dataviz
+Tests et architecture pour les dataviz NEAR
 
-
-# Règles pour l'architecture des dataviz :
+## Règles pour l'architecture des dataviz :
 - L'app est en React, on utilise donc components/ pour stocker les dataviz en tant que composants réutilisables.
-
-## Nommage et architecture des dataviz
 - Chaque dataviz correspond à une question ou un set de données, et a son propre dossier qui comprend 2 fichiers :
   - _data.ts_ pour le fetch ou le mock des données (séparé pour permettre d'appeler des mêmes données dans différentes dataviz répondant à une question similaire).
   - _dvidentifiant.tsx_ pour l'affichage, le tooltip et la personnalisation du style ; _identifant_ doit être remplacé par un nom unique et clair pour le type et la version de la dataviz (par exemple _dv_SUviolins2024_ ; cela permet aussi un futur enrichissement communautaire de la banque de dataviz).
